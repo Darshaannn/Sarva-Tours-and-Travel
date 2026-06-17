@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sarva Tours & Travels - Premium Car Rental Service in Sakinaka, Andheri East, Mumbai. Reliable local rentals, outstation trips, and airport transfers. Book now!">
+    <title>Sarva Tours & Travels | Premium Car Rental Service Mumbai</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#hero" class="logo-wrapper">
+                <img src="assets/logo.png" alt="Sarva Tours & Travels" class="logo-image">
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#hero" class="nav-link active" data-i18n="nav-home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav-about">About</a></li>
+                    <li><a href="#services" class="nav-link" data-i18n="nav-services">Services</a></li>
+                    <li><a href="#why-choose-us" class="nav-link" data-i18n="nav-why-us">Why Us</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="lang-toggle">
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="hi">Hindi</button>
+            </div>
+
+            <a href="https://wa.me/918369499251?text=Hello%20Sarva%20Travels,%20I%20want%20to%20book%20a%20ride." target="_blank" class="btn-header-cta">
+                <span data-i18n="nav-book-btn">Book Your Ride</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left: 4px;">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="hero-grid-oneframe">
+                <div class="hero-content">
+                    <div class="badge-new" data-i18n="hero-badge">
+                        <svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 11l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        TRAVEL SAFE. TRAVEL SMART.
+                    </div>
+                    <h1 class="hero-title serif-heading" data-i18n="hero-title">Your Journey<br>Begins With<br><span>Comfort & Trust</span></h1>
+                    <p class="hero-description" data-i18n="hero-desc">Reliable car rental, airport transfers, local rides, and outstation travel services from Mumbai.</p>
+                    
+                    <!-- Action CTAs -->
+                    <div class="hero-ctas">
+                        <a href="https://wa.me/918369499251?text=Hello%20Sarva%20Travels,%20I%20want%20to%20book%20a%20ride." target="_blank" class="btn-hero-primary">
+                            <svg viewBox="0 0 24 24" class="cta-icon" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            <span data-i18n="cta-book">Book Your Ride</span>
+                            <svg viewBox="0 0 24 24" class="cta-arrow-right" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="tel:8369499251" class="btn-hero-secondary">
+                            <svg viewBox="0 0 24 24" class="cta-icon-phone" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span data-i18n="cta-call">Call Now</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Wave Graphic Section -->
+        <div class="hero-bottom-curve">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,96C288,128,576,128,864,96C1152,64,1344,48,1440,32L1440,120L0,120Z" fill="var(--bg-cream)"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Floating Contact Bar below Hero -->
+    <div class="hero-contact-bar-section">
+        <div class="container">
+            <div class="hero-contact-bar">
+                <!-- Location -->
+                <div class="contact-bar-item">
+                    <div class="contact-icon-wrapper bg-teal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <label data-i18n="contact-location-label">Our Location</label>
+                        <span class="text-navy">Sakinaka, Mumbai - 400 072</span>
+                    </div>
+                </div>
+                <div class="contact-bar-divider"></div>
+                <!-- Shajan -->
+                <div class="contact-bar-item">
+                    <div class="contact-icon-wrapper bg-navy">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <label>Shajan</label>
+                        <span class="text-teal">
+                            <a href="tel:8369499251">8369499251</a> / <a href="tel:9820097349">9820097349</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-bar-divider"></div>
+                <!-- Saji -->
+                <div class="contact-bar-item">
+                    <div class="contact-icon-wrapper bg-teal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <label>Saji</label>
+                        <span class="text-teal">
+                            <a href="tel:8451031049">8451031049</a> / <a href="tel:9769125630">9769125630</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-bar-divider"></div>
+                <!-- Email -->
+                <div class="contact-bar-item">
+                    <div class="contact-icon-wrapper bg-orange">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <label data-i18n="contact-email-label">Email Us</label>
+                        <span class="text-navy"><a href="mailto:sarvatoursandtravels4234@gmail.com">sarvatoursandtravels4234@gmail.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="section-padding services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle-badge">
+                    <span class="badge-dot orange"></span>
+                    <span class="badge-text-inner" data-i18n="services-badge">★ WHAT WE OFFER</span>
+                    <span class="badge-dot orange"></span>
+                </span>
+                <h2 class="section-title-serif" data-i18n="services-title">Our <span>Car Rental</span> Services</h2>
+                <p class="section-desc" data-i18n="services-desc">Comfortable, reliable, and professional travel solutions for every journey.</p>
+            </div>
+            
+            <div class="services-grid-new">
+                <!-- Service 1: Airport Transfers -->
+                <div class="service-card-new">
+                    <div class="card-left-visual">
+                        <div class="circle-image-placeholder">
+                            <img src="assets/Airport%20Transfers.png" alt="Airport Transfers">
+                        </div>
+                        <div class="card-overlay-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 21h18M6 18l3-6 7-1.5 1 1-1.5 1.5 3.5 1-1 1-2.5 1-3.5 3Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-right-info">
+                        <h3 class="service-card-title" data-i18n="service-1-title">Airport Transfers</h3>
+                        <div class="card-title-divider"></div>
+                        <p class="service-card-desc" data-i18n="service-1-desc">On-time pickup and drop services for stress-free airport travel.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2: Local City Rides -->
+                <div class="service-card-new">
+                    <div class="card-left-visual">
+                        <div class="circle-image-placeholder">
+                            <img src="assets/Local%20City%20Rides.png" alt="Local City Rides">
+                        </div>
+                        <div class="card-overlay-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="10" width="6" height="11" rx="1" />
+                                <rect x="9" y="5" width="6" height="16" rx="1" />
+                                <rect x="15" y="12" width="6" height="9" rx="1" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-right-info">
+                        <h3 class="service-card-title" data-i18n="service-2-title">Local City Rides</h3>
+                        <div class="card-title-divider"></div>
+                        <p class="service-card-desc" data-i18n="service-2-desc">Convenient daily travel across Mumbai with comfortable vehicles.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3: Outstation Trips -->
+                <div class="service-card-new">
+                    <div class="card-left-visual">
+                        <div class="circle-image-placeholder">
+                            <img src="assets/Outstation%20Trips.png" alt="Outstation Trips">
+                        </div>
+                        <div class="card-overlay-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-right-info">
+                        <h3 class="service-card-title" data-i18n="service-3-title">Outstation Trips</h3>
+                        <div class="card-title-divider"></div>
+                        <p class="service-card-desc" data-i18n="service-3-desc">Safe and smooth rides for weekend getaways and long-distance travel.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4: Corporate Travel -->
+                <div class="service-card-new">
+                    <div class="card-left-visual">
+                        <div class="circle-image-placeholder">
+                            <img src="assets/Corporate%20Travel.png" alt="Corporate Travel">
+                        </div>
+                        <div class="card-overlay-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-right-info">
+                        <h3 class="service-card-title" data-i18n="service-4-title">Corporate Travel</h3>
+                        <div class="card-title-divider"></div>
+                        <p class="service-card-desc" data-i18n="service-4-desc">Professional rental solutions for business meetings and employee transport.</p>
+                    </div>
+                </div>
+
+                <!-- Service 5: Wedding & Event Travel -->
+                <div class="service-card-new">
+                    <div class="card-left-visual">
+                        <div class="circle-image-placeholder">
+                            <img src="assets/Wedding%20%26%20Event%20Travel.png" alt="Wedding & Event Travel">
+                        </div>
+                        <div class="card-overlay-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-right-info">
+                        <h3 class="service-card-title" data-i18n="service-5-title">Wedding & Event Travel</h3>
+                        <div class="card-title-divider"></div>
+                        <p class="service-card-desc" data-i18n="service-5-desc">Elegant transportation services for family events and special occasions.</p>
+                    </div>
+                </div>
+
+                <!-- Service 6: Hourly & Full-Day Rental -->
+                <div class="service-card-new">
+                    <div class="card-left-visual">
+                        <div class="circle-image-placeholder">
+                            <img src="assets/Hourly%20%26%20Full-Day%20Rental.png" alt="Hourly & Full-Day Rental">
+                        </div>
+                        <div class="card-overlay-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-right-info">
+                        <h3 class="service-card-title" data-i18n="service-6-title">Hourly & Full-Day Rental</h3>
+                        <div class="card-title-divider"></div>
+                        <p class="service-card-desc" data-i18n="service-6-desc">Flexible booking options to match your schedule and travel needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Centered Action CTA -->
+            <div class="services-bottom-cta">
+                <a href="https://wa.me/918369499251" target="_blank" class="btn-hero-primary center-btn">
+                    <svg viewBox="0 0 24 24" class="cta-icon" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>Book Your Ride</span>
+                    <svg viewBox="0 0 24 24" class="cta-arrow-right" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Choose Us Section -->
+    <section class="section-padding why-section" id="why-choose-us">
+        <div class="container">
+            <div class="why-header">
+                <div class="why-badge-container">
+                    <span class="why-badge-dot left"></span>
+                    <div class="why-badge" data-i18n="why-badge">
+                        <svg class="why-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        WHY CHOOSE US
+                    </div>
+                    <span class="why-badge-dot right"></span>
+                </div>
+                <h2 class="why-title" data-i18n="why-title">The <span class="why-title-highlight">Sarva Travels</span> Promise</h2>
+                <p class="why-desc" data-i18n="why-desc">We combine premium service with friendly rates to make your journeys completely stress-free.</p>
+            </div>
+            
+            <div class="why-features-grid">
+                <!-- Card 1 -->
+                <div class="why-feature-card">
+                    <div class="why-card-icon-outer">
+                        <div class="why-card-icon-inner">
+                            <img src="assets/100%25%20Sanitized%20Cars.png" alt="100% Sanitized Cars">
+                        </div>
+                    </div>
+                    <h3 class="why-card-title" data-i18n="why-card-1-title">100% Sanitized Cars</h3>
+                    <div class="why-card-divider"></div>
+                    <p class="why-card-desc" data-i18n="why-card-1-desc">Every vehicle is thoroughly cleaned and vacuumed before and after every trip.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="why-feature-card">
+                    <div class="why-card-icon-outer">
+                        <div class="why-card-icon-inner">
+                            <img src="assets/Verified%20Chauffeurs.png" alt="Verified Chauffeurs">
+                        </div>
+                    </div>
+                    <h3 class="why-card-title" data-i18n="why-card-2-title">Verified Chauffeurs</h3>
+                    <div class="why-card-divider"></div>
+                    <p class="why-card-desc" data-i18n="why-card-2-desc">Courteous, local, and experienced drivers with background checks for safety.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="why-feature-card">
+                    <div class="why-card-icon-outer">
+                        <div class="why-card-icon-inner">
+                            <img src="assets/Always%20On%20Time.png" alt="Always On Time">
+                        </div>
+                    </div>
+                    <h3 class="why-card-title" data-i18n="why-card-3-title">Always On Time</h3>
+                    <div class="why-card-divider"></div>
+                    <p class="why-card-desc" data-i18n="why-card-3-desc">Punctuality is our priority. Our driver will arrive at your pick-up point 15 mins early.</p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="why-feature-card">
+                    <div class="why-card-icon-outer">
+                        <div class="why-card-icon-inner">
+                            <img src="assets/Honest%20%26%20Fair%20Pricing.png" alt="Honest & Fair Pricing">
+                        </div>
+                    </div>
+                    <h3 class="why-card-title" data-i18n="why-card-4-title">Honest & Fair Pricing</h3>
+                    <div class="why-card-divider"></div>
+                    <p class="why-card-desc" data-i18n="why-card-4-desc">No hidden charges, tolls, or surprising state taxes. Clear breakdown before travel.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Popular Routes & Trip Packages Section -->
+    <section class="section-padding routes-section" id="packages">
+        <div class="container">
+            <div class="routes-header">
+                <div class="routes-badge-container">
+                    <span class="routes-badge-dot left"></span>
+                    <div class="routes-badge" data-i18n="routes-badge">
+                        <svg class="routes-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        POPULAR ROUTES
+                    </div>
+                    <span class="routes-badge-dot right"></span>
+                </div>
+                <h2 class="routes-title" data-i18n="routes-title">Popular Routes & <span class="routes-title-highlight">Trip Packages</span></h2>
+                <p class="routes-desc" data-i18n="routes-desc">Comfortable local and outstation travel options from Mumbai for business, family trips, airport transfers, and weekend getaways.</p>
+            </div>
+            
+            <div class="routes-grid">
+                <!-- Card 1: Airport -->
+                <div class="route-card">
+                    <div class="route-visual-wrapper">
+                        <img src="assets/Mumbai%20Airport%20Pickup%20%26%20Drop.png" alt="Mumbai Airport Pickup & Drop">
+                    </div>
+                    <div class="route-info">
+                        <h3 class="route-card-title" data-i18n="route-1-title">Mumbai Airport Pickup & Drop</h3>
+                        <div class="route-card-divider"></div>
+                        <p class="route-card-desc" data-i18n="route-1-desc">Reliable airport transfers with timely pickup and drop service.</p>
+                        <div class="route-tags">
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <span data-i18n="route-1-tag1">24/7 Service</span>
+                            </span>
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                                <span data-i18n="route-1-tag2">Airport Transfer</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Local -->
+                <div class="route-card">
+                    <div class="route-visual-wrapper">
+                        <img src="assets/Mumbai%20Local%20City%20Rides.png" alt="Mumbai Local City Rides">
+                    </div>
+                    <div class="route-info">
+                        <h3 class="route-card-title" data-i18n="route-2-title">Mumbai Local City Rides</h3>
+                        <div class="route-card-divider"></div>
+                        <p class="route-card-desc" data-i18n="route-2-desc">Convenient rides for meetings, shopping, daily travel, and local commutes.</p>
+                        <div class="route-tags">
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="16"/><line x1="15" y1="22" x2="15" y2="16"/><line x1="12" y1="16" x2="12" y2="10"/><path d="M12 2a5 5 0 0 0-5 5v3h10V7a5 5 0 0 0-5-5z"/></svg>
+                                <span data-i18n="route-2-tag1">City Travel</span>
+                            </span>
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <span data-i18n="route-2-tag2">Local Use</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Darshan -->
+                <div class="route-card">
+                    <div class="route-visual-wrapper">
+                        <img src="assets/Mumbai%20Darshan.png" alt="Mumbai Darshan">
+                    </div>
+                    <div class="route-info">
+                        <h3 class="route-card-title" data-i18n="route-3-title">Mumbai Darshan</h3>
+                        <div class="route-card-divider"></div>
+                        <p class="route-card-desc" data-i18n="route-3-desc">Comfortable sightseeing rides covering Mumbai's iconic attractions.</p>
+                        <div class="route-tags">
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                                <span data-i18n="route-3-tag1">Sightseeing</span>
+                            </span>
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <span data-i18n="route-3-tag2">Family Trip</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Lonavala -->
+                <div class="route-card">
+                    <div class="route-visual-wrapper">
+                        <img src="assets/Mumbai%20to%20Lonavala%20%20Khandala.png" alt="Mumbai to Lonavala / Khandala">
+                    </div>
+                    <div class="route-info">
+                        <h3 class="route-card-title" data-i18n="route-4-title">Mumbai to Lonavala / Khandala</h3>
+                        <div class="route-card-divider"></div>
+                        <p class="route-card-desc" data-i18n="route-4-desc">Smooth rides for scenic weekend getaways and relaxing hill station trips.</p>
+                        <div class="route-tags">
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                                <span data-i18n="route-4-tag1">Weekend Trip</span>
+                            </span>
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                                <span data-i18n="route-4-tag2">Outstation</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Pune -->
+                <div class="route-card">
+                    <div class="route-visual-wrapper">
+                        <img src="assets/Mumbai%20to%20Pune.png" alt="Mumbai to Pune">
+                    </div>
+                    <div class="route-info">
+                        <h3 class="route-card-title" data-i18n="route-5-title">Mumbai to Pune</h3>
+                        <div class="route-card-divider"></div>
+                        <p class="route-card-desc" data-i18n="route-5-desc">Safe and professional travel for business visits and family travel.</p>
+                        <div class="route-tags">
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                                <span data-i18n="route-5-tag1">Business Travel</span>
+                            </span>
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                                <span data-i18n="route-5-tag2">Intercity</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Shirdi -->
+                <div class="route-card">
+                    <div class="route-visual-wrapper">
+                        <img src="assets/Mumbai%20to%20Shirdi%20%20Nashik.png" alt="Mumbai to Shirdi / Nashik">
+                    </div>
+                    <div class="route-info">
+                        <h3 class="route-card-title" data-i18n="route-6-title">Mumbai to Shirdi / Nashik</h3>
+                        <div class="route-card-divider"></div>
+                        <p class="route-card-desc" data-i18n="route-6-desc">Comfortable long-distance rides for pilgrim and leisure journeys.</p>
+                        <div class="route-tags">
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <span data-i18n="route-6-tag1">Pilgrimage</span>
+                            </span>
+                            <span class="route-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                                <span data-i18n="route-6-tag2">Long Distance</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centered Bottom CTA Button -->
+            <div class="routes-bottom-cta">
+                <a href="https://wa.me/918369499251?text=Hello%20Sarva%20Travels,%20I%20want%20to%20plan%20a%20trip%20and%20customize%20a%20package." target="_blank" class="btn-plan-trip">
+                    <svg class="btn-plan-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                    <span data-i18n="routes-cta">Plan My Trip</span>
+                    <svg class="btn-plan-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                        <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section-padding about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="about-subtitle-pill" data-i18n="about-pill">ABOUT OUR COMPANY</span>
+                    <h2 class="about-title" data-i18n="about-title">Sarva Tours & Travels</h2>
+                    <div class="about-divider-line"></div>
+                    
+                    <p class="about-desc" data-i18n="about-p1">Sarva Tours & Travels is a premier car rental service provider based out of Sakinaka, Andheri East, Mumbai. We have been serving travelers with premium quality mobility services, offering both local commutes and long journeys across Maharashtra.</p>
+                    <p class="about-desc" data-i18n="about-p2">Our mission is to offer premium, safe, and reliable travel experiences at budget-friendly rates. Whether it's a hatchback for everyday travel or a spacious SUV for family getaways, we guarantee top-tier service.</p>
+                    
+                    <div class="about-info-cards">
+                        <!-- Location Card -->
+                        <div class="about-info-card">
+                            <div class="about-card-icon-bg">
+                                <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="about-card-text">
+                                <span class="about-card-label" data-i18n="about-base-label">BASE LOCATION</span>
+                                <span class="about-card-value" data-i18n="about-base-value">Andheri East, Mumbai</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Operating Hours Card -->
+                        <div class="about-info-card">
+                            <div class="about-card-icon-bg">
+                                <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <div class="about-card-text">
+                                <span class="about-card-label" data-i18n="about-hours-label">OPERATING HOURS</span>
+                                <span class="about-card-value" data-i18n="about-hours-value">24 Hours / 7 Days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-map-container">
+                        <iframe src="https://maps.google.com/maps?q=Sakinaka%20Metro%20Station,%20Mumbai&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Full-Width Assistance Card -->
+            <div class="about-assistance-card">
+                <div class="assistance-left">
+                    <div class="assistance-icon-bg">
+                        <svg class="assistance-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                            <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                        </svg>
+                    </div>
+                    <div class="assistance-text-container">
+                        <h4 class="assistance-title" data-i18n="assist-title">Need Assistance?</h4>
+                        <p class="assistance-desc" data-i18n="assist-desc">We're here to help you 24/7 for all your travel needs.</p>
+                    </div>
+                </div>
+                <div class="assistance-ctas">
+                    <a href="tel:+918369499251" class="btn-assistance-call">
+                        <svg class="btn-assistance-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span data-i18n="assist-call">Call Us</span>
+                    </a>
+                    <a href="https://wa.me/918369499251?text=Hello%20Sarva%20Travels,%20I%20want%20to%20book%20a%20car." target="_blank" class="btn-assistance-whatsapp">
+                        <svg class="btn-assistance-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.517 2.266 2.27 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.512 0 9.997-4.493 10-10.008.002-2.673-1.037-5.184-2.93-7.077-1.892-1.893-4.405-2.932-7.078-2.933-5.515 0-10.002 4.493-10.005 10.007-.001 2.01.526 3.974 1.53 5.714l-.997 3.646 3.755-.999zM15.84 12.5c.36-.18.6-.28.69-.43.09-.15.09-.83-.09-1.2-.18-.36-.8-1.25-1.09-1.5-.29-.25-.6-.18-.82-.18-.21 0-.45-.03-.69.03-.24.06-.82.3-1.15.66-.33.36-.94.93-.94 2.26 0 1.33.97 2.62 1.1 2.8.13.18 1.9 2.9 4.6 4.07.65.27 1.15.44 1.55.57.65.2 1.24.18 1.7.11.52-.08 1.6-.65 1.82-1.27.23-.62.23-1.15.16-1.27-.07-.12-.27-.18-.63-.36z"/>
+                        </svg>
+                        <span data-i18n="assist-whatsapp">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrated Footer (Contact Our Office) -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-header">
+                <div class="footer-badge-container">
+                    <span class="footer-badge-dot left"></span>
+                    <div class="footer-badge" data-i18n="footer-badge">GET IN TOUCH</div>
+                    <span class="footer-badge-dot right"></span>
+                </div>
+                <h2 class="footer-title" data-i18n="footer-title">Contact Our Office</h2>
+                <p class="footer-desc" data-i18n="footer-desc">Reach out to us directly for bookings, customized travel plans, or immediate fare quotations.</p>
+            </div>
+            
+            <div class="footer-grid">
+                <!-- Brand / Logo Info Column -->
+                <div class="footer-col brand-col">
+                    <div class="footer-logo-wrapper">
+                        <img src="assets/logo.png" alt="Sarva Tours & Travels" class="footer-logo-img">
+                    </div>
+                    <p class="footer-brand-text" data-i18n="footer-brand-text">Premium Car Rental Service provider based in Mumbai. Committed to offering you comfortable, safe, and reliable travel experiences.</p>
+                    <div class="footer-md-box">
+                        <span class="footer-md-label" data-i18n="footer-md-label">Managing Directors:</span>
+                        <span class="footer-md-names" data-i18n="footer-md-names">Shajan & Saji</span>
+                    </div>
+                </div>
+                
+                <!-- Contact Numbers Column -->
+                <div class="footer-col contact-col">
+                    <h3 class="footer-col-title" data-i18n="footer-contact-title">Contact Numbers</h3>
+                    <div class="footer-divider-sub"></div>
+                    
+                    <div class="footer-contact-items">
+                        <!-- Shajan Contact -->
+                        <div class="footer-contact-item">
+                            <div class="footer-item-icon-bg">
+                                <svg class="footer-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="footer-item-details">
+                                <span class="footer-item-label" data-i18n="footer-shajan-label">SHAJAN</span>
+                                <span class="footer-item-value">8369499251 / 9820097349</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Saji Contact -->
+                        <div class="footer-contact-item">
+                            <div class="footer-item-icon-bg">
+                                <svg class="footer-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="footer-item-details">
+                                <span class="footer-item-label" data-i18n="footer-saji-label">SAJI</span>
+                                <span class="footer-item-value">8451031049 / 9769125630</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Office Address Column -->
+                <div class="footer-col address-col">
+                    <h3 class="footer-col-title" data-i18n="footer-address-title">Office Address</h3>
+                    <div class="footer-divider-sub"></div>
+                    
+                    <div class="footer-contact-items">
+                        <!-- Address -->
+                        <div class="footer-contact-item align-top">
+                            <div class="footer-item-icon-bg">
+                                <svg class="footer-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="footer-item-details">
+                                <span class="footer-item-label" data-i18n="footer-address-label">ADDRESS</span>
+                                <span class="footer-item-value text-regular" data-i18n="footer-address-value">Shop No. 1/3, Above Friends Hotel, Chandrakaladevi Chawl, Pipe Line, Sakinaka, Mumbai - 400 072.</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="footer-contact-item">
+                            <div class="footer-item-icon-bg">
+                                <svg class="footer-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="footer-item-details">
+                                <span class="footer-item-label" data-i18n="footer-email-label">EMAIL</span>
+                                <span class="footer-item-value text-regular">sarvatoursandtravels4234@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Copy Bar -->
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-flex">
+                <p class="footer-copy-text" data-i18n="footer-copy">&copy; 2026 Sarva Tours & Travels. All Rights Reserved.</p>
+                <div class="footer-bottom-ctas">
+                    <a href="tel:+918369499251" class="btn-footer-bottom-call">
+                        <svg class="btn-footer-bottom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span data-i18n="footer-call">Call Us</span>
+                    </a>
+                    <a href="https://wa.me/918369499251?text=Hello%20Sarva%20Travels,%20I%20want%20to%20book%20a%20car." target="_blank" class="btn-footer-bottom-whatsapp">
+                        <svg class="btn-footer-bottom-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.517 2.266 2.27 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.512 0 9.997-4.493 10-10.008.002-2.673-1.037-5.184-2.93-7.077-1.892-1.893-4.405-2.932-7.078-2.933-5.515 0-10.002 4.493-10.005 10.007-.001 2.01.526 3.974 1.53 5.714l-.997 3.646 3.755-.999zM15.84 12.5c.36-.18.6-.28.69-.43.09-.15.09-.83-.09-1.2-.18-.36-.8-1.25-1.09-1.5-.29-.25-.6-.18-.82-.18-.21 0-.45-.03-.69.03-.24.06-.82.3-1.15.66-.33.36-.94.93-.94 2.26 0 1.33.97 2.62 1.1 2.8.13.18 1.9 2.9 4.6 4.07.65.27 1.15.44 1.55.57.65.2 1.24.18 1.7.11.52-.08 1.6-.65 1.82-1.27.23-.62.23-1.15.16-1.27-.07-.12-.27-.18-.63-.36z"/>
+                        </svg>
+                        <span data-i18n="footer-whatsapp">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Quick Booking Dock -->
+    <div class="booking-dock-container">
+        <div class="booking-dock">
+            <div class="dock-actions">
+                <a href="tel:8369499251" class="dock-btn call-btn" aria-label="Call Shajan">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span data-i18n="dock-call">Call Us</span>
+                </a>
+                <a href="https://wa.me/918369499251" target="_blank" class="dock-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    <span data-i18n="dock-whatsapp">WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive script -->
+    <script src="script.js"></script>
+</body>
+</html>
