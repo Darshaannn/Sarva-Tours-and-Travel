@@ -486,6 +486,8 @@ header {
 .contact-details span {
     font-size: 0.95rem;
     font-weight: 700;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .contact-details span.text-teal, .contact-details span.text-teal a {
