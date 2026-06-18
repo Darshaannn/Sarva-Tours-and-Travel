@@ -1975,6 +1975,11 @@ footer {
         align-self: center;
     }
     
+    .hero-brand-name {
+        align-self: center;
+        text-align: center;
+    }
+    
     .hero-content {
         align-items: center;
         max-width: 100%;
