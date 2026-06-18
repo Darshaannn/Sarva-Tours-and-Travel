@@ -219,7 +219,7 @@ header.nav-hidden {
 .hero-brand-name {
     font-size: clamp(1.35rem, 3vw, 1.85rem);
     font-weight: 700;
-    color: #0F8A8F; /* Teal accent */
+    color: #0E325B; /* Navy accent */
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
@@ -1972,18 +1972,19 @@ footer {
     }
 
     .nav-container {
-        height: 80px;
+        height: 140px;
     }
 
     .logo-image {
-        height: 56px;
+        height: 130px;
+        margin: 0;
     }
 
     .hero-section {
         height: auto;
         min-height: auto;
         max-height: none;
-        padding: 6rem 0 3rem;
+        padding: 12.5rem 0 3rem;
     }
 
     .hero-grid-oneframe {
@@ -2386,10 +2387,11 @@ footer {
 
 @media (max-width: 768px) {
     .nav-container {
-        height: 80px;
+        height: 120px;
     }
     .logo-image {
-        height: 68px;
+        height: 110px;
+        margin: 0;
     }
     .services-grid-new {
         grid-template-columns: 1fr; /* Switch to 1 column on tablet to give cards enough room */
@@ -2401,10 +2403,11 @@ footer {
 
 @media (max-width: 480px) {
     .nav-container {
-        height: 75px;
+        height: 110px;
     }
     .logo-image {
-        height: 64px; /* Larger logo on mobile for visibility */
+        height: 100px; /* Larger logo on mobile for visibility */
+        margin: 0;
     }
     .lang-toggle {
         margin-right: 0.25rem;
