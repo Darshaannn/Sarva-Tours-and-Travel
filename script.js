@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav-book-btn': 'Book Your Ride',
             // Hero
             'hero-badge': 'TRAVEL SAFE. TRAVEL SMART.',
+            'hero-brand-name': 'Sarva Tours & Travels',
             'hero-title': 'Your Journey<br>Begins With<br><span>Comfort &amp; Trust</span>',
             'hero-desc': 'Reliable car rental, airport transfers, local rides, and outstation travel services from Mumbai.',
             'cta-book': 'Book Your Ride',
@@ -37,6 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'service-5-desc': 'Elegant transportation services for family events and special occasions.',
             'service-6-title': 'Hourly &amp; Full-Day Rental',
             'service-6-desc': 'Flexible booking options to match your schedule and travel needs.',
+            'service-7-title': 'Mumbai Darshan',
+            'service-7-desc': "Comfortable sightseeing rides covering Mumbai's iconic attractions.",
             'services-cta': 'Book Your Ride',
             // Why Choose Us
             'why-badge': 'WHY CHOOSE US',
@@ -134,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav-book-btn': 'सवारी बुक करें',
             // Hero
             'hero-badge': 'सुरक्षित यात्रा। स्मार्ट यात्रा।',
+            'hero-brand-name': 'सर्वा टूर्स एंड ट्रैवल्स',
             'hero-title': 'आपकी यात्रा<br>शुरू होती है<br><span>आराम और विश्वास से</span>',
             'hero-desc': 'मुंबई से विश्वसनीय कार किराया, एयरपोर्ट ट्रांसफर, स्थानीय और आउटस्टेशन यात्रा सेवाएं।',
             'cta-book': 'सवारी बुक करें',
@@ -157,6 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'service-5-desc': 'पारिवारिक आयोजनों और विशेष अवसरों के लिए सुरुचिपूर्ण परिवहन सेवाएं।',
             'service-6-title': 'प्रति घंटे और पूरे दिन का किराया',
             'service-6-desc': 'आपके शेड्यूल और यात्रा आवश्यकताओं के अनुसार लचीले बुकिंग विकल्प।',
+            'service-7-title': 'मुंबई दर्शन',
+            'service-7-desc': 'मुंबई के प्रसिद्ध आकर्षणों को कवर करने वाली आरामदायक सैर।',
             'services-cta': 'सवारी बुक करें',
             // Why Choose Us
             'why-badge': 'हमें क्यों चुनें',

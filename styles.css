@@ -211,6 +211,18 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
+.hero-brand-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #F08A18; /* Gold/Orange accent */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: -0.25rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    align-self: flex-start;
+}
+
 .hero-usp-icon {
     width: 14px;
     height: 14px;
@@ -752,6 +764,15 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 2rem;
     margin-top: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .services-grid-new {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .services-grid-new > .service-card-new:nth-child(7) {
+        grid-column: 2;
+    }
 }
 
 .service-card-new {
