@@ -1962,11 +1962,26 @@ footer {
 
 /* Mobile Responsive Adjustments */
 @media (max-width: 992px) {
+    header {
+        position: fixed !important;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-container {
+        height: 80px;
+    }
+
+    .logo-image {
+        height: 56px;
+    }
+
     .hero-section {
         height: auto;
         min-height: auto;
         max-height: none;
-        padding: 5rem 0 3rem;
+        padding: 6rem 0 3rem;
     }
 
     .hero-grid-oneframe {
@@ -2378,7 +2393,7 @@ footer {
 
 @media (max-width: 480px) {
     .logo-image {
-        height: 50px; /* Slightly larger logo on mobile for visibility */
+        height: 56px; /* Slightly larger logo on mobile for visibility */
     }
     .lang-toggle {
         margin-right: 0.25rem;
