@@ -213,18 +213,20 @@ header.nav-hidden {
     gap: 0.5rem;
     border: 1px solid var(--border-light);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    margin-bottom: 0.75rem;
 }
 
 .hero-brand-name {
-    font-size: 0.95rem;
+    font-size: clamp(1.35rem, 3vw, 1.85rem);
     font-weight: 700;
-    color: #F08A18; /* Gold/Orange accent */
+    color: #0F8A8F; /* Teal accent */
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: -0.25rem;
+    margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     display: inline-block;
     align-self: flex-start;
+    line-height: 1.2;
 }
 
 .hero-usp-icon {
@@ -2559,20 +2561,31 @@ footer {
         margin-bottom: 1rem;
     }
     .responsibility-gallery {
-        height: 320px;
+        height: 340px;
         width: 100%;
         margin-left: 0;
         transform: none;
-        gap: 8px;
+        gap: 0;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Hide scrollbar Firefox */
+    }
+    .responsibility-gallery::-webkit-scrollbar {
+        display: none; /* Hide scrollbar Chrome/Safari */
     }
     .responsibility-img-wrapper {
+        min-width: 100%;
+        width: 100%;
+        height: 100%;
+        scroll-snap-align: start;
         border-right: none;
     }
     .responsibility-img-wrapper img {
         transform: none;
     }
     .responsibility-img-wrapper:hover img {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 
@@ -2585,8 +2598,65 @@ footer {
         gap: 1rem;
     }
     .responsibility-gallery {
-        height: 240px;
-        gap: 6px;
+        height: 280px;
     }
 }
+
+/* Lightbox Modal */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.3s ease-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 45px;
+    font-weight: 300;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+    line-height: 1;
+    z-index: 10000;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+    color: var(--accent-cyan);
+    text-decoration: none;
+}
+
 

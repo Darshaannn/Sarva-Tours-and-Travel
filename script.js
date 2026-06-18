@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer-contact-title': 'Contact Numbers',
             'footer-shajan-label': 'SHAJAN',
             'footer-saji-label': 'SAJI',
+            'footer-sreerag-label': 'SREERAG',
             'footer-address-title': 'Office Address',
             'footer-address-label': 'ADDRESS',
             'footer-address-value': 'Shop No. 1/3, Above Friends Hotel, Chandrakaladevi Chawl, Pipe Line, Sakinaka, Mumbai - 400 072.',
@@ -239,6 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer-contact-title': 'संपर्क नंबर',
             'footer-shajan-label': 'शजन',
             'footer-saji-label': 'साजी',
+            'footer-sreerag-label': 'श्रीराग',
             'footer-address-title': 'कार्यालय का पता',
             'footer-address-label': 'पता',
             'footer-address-value': 'शॉप नं. 1/3, फ्रेंड्स होटल के ऊपर, चंद्रकलादेवी चावल, पाइप लाइन, साकीनाका, मुंबई - 400 072.',
@@ -429,6 +431,87 @@ document.addEventListener('DOMContentLoaded', () => {
                 header.classList.remove('nav-hidden');
             }
             lastScrollTop = currentScrollTop;
+        });
+    }
+
+    // =============================================
+    // RESPONSIBILITY GALLERY AUTO-SLIDER (MOBILE) & LIGHTBOX (ALL)
+    // =============================================
+    const gallery = document.querySelector('.responsibility-gallery');
+    let autoSlideInterval;
+    let activeIndex = 0;
+    
+    function startAutoSlide() {
+        if (!gallery) return;
+        autoSlideInterval = setInterval(() => {
+            if (window.innerWidth > 991) return; // Only on mobile/tablet
+            
+            const images = gallery.querySelectorAll('.responsibility-img-wrapper');
+            if (images.length === 0) return;
+            
+            activeIndex = (activeIndex + 1) % images.length;
+            const slideWidth = gallery.clientWidth;
+            gallery.scrollTo({
+                left: activeIndex * slideWidth,
+                behavior: 'smooth'
+            });
+        }, 3000); // Shift every 3 seconds
+    }
+    
+    function stopAutoSlide() {
+        if (autoSlideInterval) {
+            clearInterval(autoSlideInterval);
+        }
+    }
+    
+    // Start auto slider on load
+    startAutoSlide();
+    
+    // Manage auto-slide state on manual interaction
+    if (gallery) {
+        // Update index if scrolled manually
+        gallery.addEventListener('scroll', () => {
+            const slideWidth = gallery.clientWidth;
+            if (slideWidth > 0) {
+                activeIndex = Math.round(gallery.scrollLeft / slideWidth);
+            }
+        });
+
+        gallery.addEventListener('touchstart', stopAutoSlide);
+        gallery.addEventListener('touchend', () => {
+            stopAutoSlide();
+            startAutoSlide();
+        });
+    }
+    
+    // Lightbox modal setup
+    const carImages = document.querySelectorAll('.responsibility-img-wrapper img');
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeBtn = document.querySelector('.lightbox-close');
+    
+    if (lightbox && lightboxImg) {
+        carImages.forEach(img => {
+            img.style.cursor = 'zoom-in';
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+                stopAutoSlide(); // pause sliding when viewing fullscreen
+            });
+        });
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+                startAutoSlide(); // resume sliding when lightbox is closed
+            });
+        }
+        
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = 'none';
+                startAutoSlide(); // resume sliding when lightbox is closed
+            }
         });
     }
 });
