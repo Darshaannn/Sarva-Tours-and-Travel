@@ -2385,6 +2385,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        height: 80px;
+    }
+    .logo-image {
+        height: 68px;
+    }
     .services-grid-new {
         grid-template-columns: 1fr; /* Switch to 1 column on tablet to give cards enough room */
     }
@@ -2394,8 +2400,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .nav-container {
+        height: 75px;
+    }
     .logo-image {
-        height: 56px; /* Slightly larger logo on mobile for visibility */
+        height: 64px; /* Larger logo on mobile for visibility */
     }
     .lang-toggle {
         margin-right: 0.25rem;
