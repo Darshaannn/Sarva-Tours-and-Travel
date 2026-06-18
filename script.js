@@ -405,4 +405,30 @@ document.addEventListener('DOMContentLoaded', () => {
             window.open(`https://wa.me/918369499251?text=${encodedMessage}`, '_blank');
         });
     }
+
+    // =============================================
+    // AUTO-HIDE HEADER ON SCROLL
+    // =============================================
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+    
+    if (header) {
+        window.addEventListener('scroll', () => {
+            let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Avoid negative values (e.g., bounce scroll on iOS)
+            if (currentScrollTop < 0) {
+                currentScrollTop = 0;
+            }
+            
+            if (currentScrollTop > lastScrollTop && currentScrollTop > 80) {
+                // Scrolling down - hide header
+                header.classList.add('nav-hidden');
+            } else {
+                // Scrolling up - show header
+                header.classList.remove('nav-hidden');
+            }
+            lastScrollTop = currentScrollTop;
+        });
+    }
 });

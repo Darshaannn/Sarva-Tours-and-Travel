@@ -77,7 +77,11 @@ header {
     top: 0;
     z-index: 100;
     border-bottom: 1px solid var(--border-light);
-    transition: var(--transition-smooth);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s, border-color 0.3s;
+}
+
+header.nav-hidden {
+    transform: translateY(-100%);
 }
 
 .nav-container {
@@ -2374,7 +2378,7 @@ footer {
 
 @media (max-width: 480px) {
     .logo-image {
-        height: 44px; /* Slightly smaller logo on mobile for navbar fit */
+        height: 50px; /* Slightly larger logo on mobile for visibility */
     }
     .lang-toggle {
         margin-right: 0.25rem;
