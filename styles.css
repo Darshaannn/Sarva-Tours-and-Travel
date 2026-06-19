@@ -219,7 +219,7 @@ header.nav-hidden {
 .hero-brand-name {
     font-size: clamp(1.35rem, 3vw, 1.85rem);
     font-weight: 700;
-    color: #0E325B; /* Navy accent */
+    color: #800080; /* Purple */
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
