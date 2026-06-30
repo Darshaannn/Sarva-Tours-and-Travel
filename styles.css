@@ -88,7 +88,7 @@ header.nav-hidden {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 90px;
 }
 
 .logo-wrapper {
@@ -98,7 +98,7 @@ header.nav-hidden {
 }
 
 .logo-image {
-    height: 58px;
+    height: 78px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -172,7 +172,7 @@ header.nav-hidden {
 
 /* Hero Section */
 .hero-section {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 90px);
     min-height: 520px;
     max-height: 850px;
     padding: 0;
